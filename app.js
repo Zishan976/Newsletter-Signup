@@ -62,10 +62,10 @@ app.post("/failure", (req, res) => {
 
 })
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 10000;
 
 app.listen(port, () => {
-    console.log("sarver is running on port 8080");
+    console.log("sarver is running on port 10000");
 });
 
 //apiKey
