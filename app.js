@@ -68,11 +68,8 @@ app.listen(port, () => {
     console.log("sarver is running on port 10000");
 });
 
-//apiKey
-//0701f8724287b1727dbf7c956fa7483d-us14
 
 
-//audienceId
-//623c2f8b7c
 
-//6f89bfdcb90f11ab9a897363aa93b5d0-us14
+
+
