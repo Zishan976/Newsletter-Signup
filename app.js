@@ -2,6 +2,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
 const https = require("https");
+require('dotenv').config();
+console.log(`MAILCHIMP_API_KEY: ${process.env.MAILCHIMP_API_KEY}`);
+console.log(`MAILCHIMP_LIST_ID: ${process.env.MAILCHIMP_LIST_ID}`);
 
 const app = express();
 app.use(express.static("public"));
@@ -39,9 +42,10 @@ app.post("/", (req, res) => {
     const options = {
         method: "POST",
         auth: `anystring:${process.env.MAILCHIMP_API_KEY}`
-    }
+    };
 
     const request = https.request(url, options, (response) => {
+        console.log(`Status Code: ${response.statusCode}`);
         if (response.statusCode === 200) {
             response.on("data", (data) => {
                 console.log(JSON.parse(data));
@@ -62,14 +66,11 @@ app.post("/failure", (req, res) => {
 
 })
 
-const port = process.env.PORT || 10000;
+const port = process.env.PORT;
 
 app.listen(port, () => {
-    console.log("sarver is running on port 10000");
+    console.log(`Server is running on port ${port}`);
 });
-
-
-
 
 
 
