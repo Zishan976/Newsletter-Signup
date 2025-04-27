@@ -29,11 +29,6 @@ body {
   border-top-right-radius: 0 !important;
 }
 
-img.mb-4 {
-  height: 4rem;
-  margin-bottom: 0.5rem !important;
-  width: 5rem;
-}
 .logo {
   width: 70%;
   height: 100%;
