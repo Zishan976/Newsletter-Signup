@@ -1,36 +1,41 @@
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 .form-signin {
-    max-width: 330px;
-    padding: 1rem;
+  max-width: 330px;
+  padding: 1rem;
 }
 
 .form-signin .form-floating:focus-within {
-    z-index: 2;
+  z-index: 2;
 }
 
 .first {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
 }
 
 .middle {
-    margin-bottom: -1px;
-    border-radius: 0 !important;
+  margin-bottom: -1px;
+  border-radius: 0 !important;
 }
 
 .last {
-    margin-bottom: 10px;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+  margin-bottom: 10px;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
 
 img.mb-4 {
-    height: 4rem;
-    margin-bottom: .5rem !important;
-    width: 5rem;
+  height: 4rem;
+  margin-bottom: 0.5rem !important;
+  width: 5rem;
+}
+.logo {
+  width: 70%;
+  height: 100%;
+  margin-bottom: 0 !important;
 }
